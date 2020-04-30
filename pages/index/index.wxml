@@ -1,0 +1,12 @@
+<van-search value="{{ keyword }}" background="" placeholder="请输入搜索关键词" />
+<swiper id="banner" indicator-dots="true" autoplay="true">
+  <swiper-item wx:for="{{topBanner}}" wx:key="index">
+    <image src="{{item.url}}"></image>
+  </swiper-item>
+</swiper>
+<view class="nav-box">
+  <view class="nav" wx:for="{{navList}}" :key="index">
+    <image class="nav-icon" src="{{item.icon}}"></image>
+    <view class="nav-text">{{item.text}}</view>
+  </view>
+</view>
